@@ -1,21 +1,22 @@
 {
 	"manifest_version":2,
-	"applications":{
+	"name":"FeedlyTB",
+	"description":"Feedly on Thundebird",
+	"version":"0.1",
+	"author":"Sinyeol An",
+	"browser_specific_settings": {
 		"gecko":{
-			"id":"FeedlySync@AMArostegui",
-			"strict_min_version":"68.0"
+			"id":"FeedlyTB@soundlake",
+			"strict_min_version":"78.0"
 		}
-		
 	},
-	"name":"Feedly Synchronizer",
-	"description":"Synchronize your favorite RSS sources with Thundebird and Feedly",
-	"author":"Antonio Miras",
-	"version":"2.0.0",
-	"legacy":{
-		"type":"bootstrap",
-		"options":{
-			"page":"chrome://FeedlySync/content/options.xul",
-			"open_in_tab":false
-		}		
-	}
+	"browser_action": {
+		"allowed_spaces": [],
+		"default_title": "FeedlyTB"
+	},
+	"icons": {
+        "64": "images/icon64.png",
+        "32": "images/icon24BW.png",
+        "16": "images/icon.png"
+    }
 }
